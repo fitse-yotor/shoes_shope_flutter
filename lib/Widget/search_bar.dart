@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shoes/config/assets/assets.dart';
+import 'package:shoes/constants/app_constants.dart';
 
 class SearchBar extends StatelessWidget {
   @override
@@ -8,7 +10,24 @@ class SearchBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
-          
+          height: 50,
+                    width: 270,
+                    padding: EdgeInsets.symmetric(horizontal: 15),
+                    decoration: BoxDecoration(
+                      color: kAccentColor,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Search Products...",
+                          style: TextStyle(
+                              color: Colors.white, fontFamily: "Poppins-Light"),
+                        ),
+                        kSearchIcon,
+                      ],
+                    )
         )
       ],
     ),);
