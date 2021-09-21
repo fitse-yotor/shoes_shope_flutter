@@ -22,6 +22,18 @@ class _CatgoriesState extends State<Catgories> {
       ),
       subtitle: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          InkWell(
+            onTap: () {
+              setState(() {
+                isAll = true;
+                isClasic = false;
+                isFashion = false;
+                isLocal = false;
+              });
+            },
+          )
+        ],
       ),
     );
   }
