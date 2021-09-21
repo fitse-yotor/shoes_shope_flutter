@@ -20,6 +20,7 @@ class _CustomAnimationState extends State<CustomAnimation> {
       transform: Matrix4.translationValues(xfactor, yfactro, 0)
         ..scale(scaleFactor)
         ..rotateY(isDrawerOpen ? -0.5 : 0),
+      duration: Duration(microseconds: 2000),
     );
   }
 }
