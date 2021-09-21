@@ -31,7 +31,9 @@ class _CatgoriesState extends State<Catgories> {
                 isFashion = false;
                 isLocal = false;
               });
+              
             },
+            child: Tab(icon: Text('ALL', style: TextStyle(fontSize: 16, color: isAll? Colors.white: Colors.grey),),),
           )
         ],
       ),
