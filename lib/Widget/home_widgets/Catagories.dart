@@ -70,12 +70,13 @@ class _CatgoriesState extends State<Catgories> {
               icon: Text(
                 'Fashion',
                 style: TextStyle(
-                    fontSize: 16, color: isAll ? Colors.white : Colors.grey),
+                    fontSize: 16,
+                    color: isFashion ? Colors.white : Colors.grey),
               ),
             ),
           ),
           InkWell(
-             onTap: () {
+            onTap: () {
               setState(() {
                 isAll = false;
                 isClasic = false;
@@ -83,7 +84,13 @@ class _CatgoriesState extends State<Catgories> {
                 isSport = true;
               });
             },
-            child: Tab(icon: Text('Sport', style: TextStyle(fontSize: 16, color: isSport? Colors.white: Colors.grey),),),
+            child: Tab(
+              icon: Text(
+                'Sport',
+                style: TextStyle(
+                    fontSize: 16, color: isSport ? Colors.white : Colors.grey),
+              ),
+            ),
           )
         ],
       ),
