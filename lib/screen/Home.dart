@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoes/Widget/home_widgets/Catagories.dart';
 import 'package:shoes/constants/animation/customAnimation.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,7 +16,7 @@ class _HomePageState extends State<HomePage> {
         length: 4,
         child: CustomAnimation(
           home: Column(
-            children: [Text('kdfkjnj')],
+            children: [Catgories()],
           ),
         ));
   }
