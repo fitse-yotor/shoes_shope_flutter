@@ -56,6 +56,7 @@ class _CustomAnimationState extends State<CustomAnimation> {
                 ),
           actions: [kNotifecationIcon],
         ),
+        body: widget.home,
       ),
     );
   }
