@@ -17,10 +17,12 @@ class _CustomAnimationState extends State<CustomAnimation> {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      transform: Matrix4.translationValues(xfactor, yfactro, 0)
-        ..scale(scaleFactor)
-        ..rotateY(isDrawerOpen ? -0.5 : 0),
-      duration: Duration(microseconds: 2000),
-    );
+        transform: Matrix4.translationValues(xfactor, yfactro, 0)
+          ..scale(scaleFactor)
+          ..rotateY(isDrawerOpen ? -0.5 : 0),
+        duration: Duration(microseconds: 2000),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(isDrawerOpen ? 30 : 0),
+        ));
   }
 }
