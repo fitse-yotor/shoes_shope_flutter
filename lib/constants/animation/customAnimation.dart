@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoes/config/assets/assets.dart';
 
 class CustomAnimation extends StatefulWidget {
   final Widget home;
@@ -25,32 +26,37 @@ class _CustomAnimationState extends State<CustomAnimation> {
         borderRadius: BorderRadius.circular(isDrawerOpen ? 30 : 0),
       ),
       child: Scaffold(
-          bottomNavigationBar: CustomBotNav,
-          appBar: AppBar(
-              elevation: 0.0,
-              leading: isDrawerOpen
-                  ? IconButton(
-                      onPressed: () {
-                        setState(() {
-                          xfactor = 0.0;
-                          yfactro = 0.0;
-                          scaleFactor = 1;
-                          isDrawerOpen = false;
-                        });
-                      },
-                      icon: Icon(Icons.arrow_back_ios),
-                    )
-                  : IconButton(
-                      onPressed: () {
-                        setState(() {
-                          xfactor = 230;
-                          yfactro = 200;
-                          scaleFactor = 0.6;
-                          isDrawerOpen = true;
-                        });
-                      },
-                      tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-                      icon: Icon(Icons.arrow_back)))),
+        bottomNavigationBar: CustomBotNav,
+        appBar: AppBar(
+          elevation: 0.0,
+          leading: isDrawerOpen
+              ? IconButton(
+                  onPressed: () {
+                    setState(() {
+                      xfactor = 0.0;
+                      yfactro = 0.0;
+                      scaleFactor = 1;
+                      isDrawerOpen = false;
+                    });
+                  },
+                  icon: Icon(Icons.arrow_back_ios),
+                )
+              : IconButton(
+                  icon: kMenuIcon,
+                  onPressed: () {
+                    setState(() {
+                      xfactor = 230;
+                      yfactro = 200;
+                      scaleFactor = 0.6;
+                      isDrawerOpen = true;
+                    });
+                  },
+                  tooltip:
+                      MaterialLocalizations.of(context).openAppDrawerTooltip,
+                ),
+          actions: [kNotifecationIcon],
+        ),
+      ),
     );
   }
 }
