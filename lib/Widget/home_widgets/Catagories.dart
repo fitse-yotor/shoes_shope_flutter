@@ -20,6 +20,9 @@ class _CatgoriesState extends State<Catgories> {
         textAlign: TextAlign.left,
         style: TextStyle(color: Colors.white, fontSize: 22),
       ),
+      subtitle: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      ),
     );
   }
 }
