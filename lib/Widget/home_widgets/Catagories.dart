@@ -83,6 +83,7 @@ class _CatgoriesState extends State<Catgories> {
                 isSport = true;
               });
             },
+            child: Tab(icon: Text('Sport', style: TextStyle(fontSize: 16, color: isSport? Colors.white: Colors.grey),),),
           )
         ],
       ),
