@@ -17,16 +17,24 @@ class _CustomAnimationState extends State<CustomAnimation> {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-        transform: Matrix4.translationValues(xfactor, yfactro, 0)
-          ..scale(scaleFactor)
-          ..rotateY(isDrawerOpen ? -0.5 : 0),
-        duration: Duration(microseconds: 250),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(isDrawerOpen ? 30 : 0),
-        ),
-        child: Scaffold(
+      transform: Matrix4.translationValues(xfactor, yfactro, 0)
+        ..scale(scaleFactor)
+        ..rotateY(isDrawerOpen ? -0.5 : 0),
+      duration: Duration(microseconds: 250),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(isDrawerOpen ? 30 : 0),
+      ),
+      child: Scaffold(
           bottomNavigationBar: CustomBotNav,
-        ),);
-    
+          appBar: AppBar(
+              elevation: 0.0,
+              leading: isDrawerOpen
+                  ? IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.arrow_back_ios),
+                    )
+                  : IconButton(
+                      onPressed: () {}, icon: Icon(Icons.arrow_back)))),
+    );
   }
 }
