@@ -9,6 +9,11 @@ class CustomAnimation extends StatefulWidget {
 }
 
 class _CustomAnimationState extends State<CustomAnimation> {
+  double xfactor = 0.0;
+  double yfactro = 0.0;
+
+  double scaleFactor = 1;
+  bool isDrawerOpen = false;
   @override
   Widget build(BuildContext context) {
     return Container();
