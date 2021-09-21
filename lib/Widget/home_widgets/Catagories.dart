@@ -15,7 +15,7 @@ class _CatgoriesState extends State<Catgories> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      
+      title: Text('catagories'),
     );
   }
 }
