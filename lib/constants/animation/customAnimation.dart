@@ -16,6 +16,6 @@ class _CustomAnimationState extends State<CustomAnimation> {
   bool isDrawerOpen = false;
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return AnimatedContainer();
   }
 }
