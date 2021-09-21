@@ -16,6 +16,10 @@ class _CustomAnimationState extends State<CustomAnimation> {
   bool isDrawerOpen = false;
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer();
+    return AnimatedContainer(
+      transform: Matrix4.translationValues(xfactor, yfactro, 0)
+        ..scale(scaleFactor)
+        ..rotateY(isDrawerOpen ? -0.5 : 0),
+    );
   }
 }
