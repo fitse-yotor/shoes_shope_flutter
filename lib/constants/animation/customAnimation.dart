@@ -23,6 +23,10 @@ class _CustomAnimationState extends State<CustomAnimation> {
         duration: Duration(microseconds: 250),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(isDrawerOpen ? 30 : 0),
-        ));
+        ),
+        child: Scaffold(
+          bottomNavigationBar: CustomBotNav,
+        ),);
+    
   }
 }
