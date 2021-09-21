@@ -11,7 +11,7 @@ class _CatgoriesState extends State<Catgories> {
   bool isAll = true;
   bool isFashion = false;
   bool isClasic = false;
-  bool isLocal = false;
+  bool isSport = false;
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -29,12 +29,22 @@ class _CatgoriesState extends State<Catgories> {
                 isAll = true;
                 isClasic = false;
                 isFashion = false;
-                isLocal = false;
+                isSport = false;
               });
               
             },
             child: Tab(icon: Text('ALL', style: TextStyle(fontSize: 16, color: isAll? Colors.white: Colors.grey),),),
-          )
+          ),
+          InkWell(onTap: () {
+              setState(() {
+                isAll = false;
+                isClasic = true;
+                isFashion = false;
+                isSport = false;
+              });
+              
+            },
+            )
         ],
       ),
     );
