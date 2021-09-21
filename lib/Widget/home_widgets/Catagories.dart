@@ -15,11 +15,12 @@ class _CatgoriesState extends State<Catgories> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(
-        'catagories',
-        textAlign: TextAlign.left,
-        style: TextStyle(color: Colors.white, fontSize: 22),
-      ),
+      title: Text('catagories',
+          textAlign: TextAlign.left,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 29,
+          )),
       subtitle: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
