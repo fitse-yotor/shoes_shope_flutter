@@ -26,7 +26,7 @@ class _CustomAnimationState extends State<CustomAnimation> {
         borderRadius: BorderRadius.circular(isDrawerOpen ? 30 : 0),
       ),
       child: Scaffold(
-        bottomNavigationBar: CustomBotNav,
+        //bottomNavigationBar: CustomBotNav,
         appBar: AppBar(
           elevation: 0.0,
           leading: isDrawerOpen
