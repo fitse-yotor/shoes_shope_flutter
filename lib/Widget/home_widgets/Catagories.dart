@@ -53,7 +53,7 @@ class _CatgoriesState extends State<Catgories> {
               icon: Text(
                 'Classic',
                 style: TextStyle(
-                    fontSize: 16, color: isAll ? Colors.white : Colors.grey),
+                    fontSize: 16, color: isClasic ? Colors.white : Colors.grey),
               ),
             ),
           ),
