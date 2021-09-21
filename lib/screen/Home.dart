@@ -10,10 +10,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: Icon(Icons.ac_unit),
-      ),
-    );
+    return DefaultTabController(length: 4, child: CustomAnimation)
+      
+    
   }
 }
