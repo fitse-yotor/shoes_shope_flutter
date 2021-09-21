@@ -35,13 +35,22 @@ class _CustomAnimationState extends State<CustomAnimation> {
                           xfactor = 0.0;
                           yfactro = 0.0;
                           scaleFactor = 1;
-                          isDrawerOpen = false ;
+                          isDrawerOpen = false;
                         });
                       },
                       icon: Icon(Icons.arrow_back_ios),
                     )
                   : IconButton(
-                      onPressed: () {}, icon: Icon(Icons.arrow_back)))),
+                      onPressed: () {
+                        setState(() {
+                          xfactor = 230;
+                          yfactro = 200;
+                          scaleFactor = 0.6;
+                          isDrawerOpen = true;
+                        });
+                      },
+                      tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+                      icon: Icon(Icons.arrow_back)))),
     );
   }
 }
