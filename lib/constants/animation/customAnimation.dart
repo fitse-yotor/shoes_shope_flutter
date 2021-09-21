@@ -30,7 +30,14 @@ class _CustomAnimationState extends State<CustomAnimation> {
               elevation: 0.0,
               leading: isDrawerOpen
                   ? IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        setState(() {
+                          xfactor = 0.0;
+                          yfactro = 0.0;
+                          scaleFactor = 1;
+                          isDrawerOpen = false ;
+                        });
+                      },
                       icon: Icon(Icons.arrow_back_ios),
                     )
                   : IconButton(
