@@ -42,7 +42,7 @@ class _CatgoriesState extends State<Catgories> {
                 isFashion = false;
                 isSport = false;
               });
-              
+              child: Tab(icon: Text('Classic', style: TextStyle(fontSize: 16, color: isAll? Colors.white: Colors.grey),),),
             },
             )
         ],
