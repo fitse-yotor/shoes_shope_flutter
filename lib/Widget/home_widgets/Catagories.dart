@@ -73,6 +73,16 @@ class _CatgoriesState extends State<Catgories> {
                     fontSize: 16, color: isAll ? Colors.white : Colors.grey),
               ),
             ),
+          ),
+          InkWell(
+             onTap: () {
+              setState(() {
+                isAll = false;
+                isClasic = false;
+                isFashion = false;
+                isSport = true;
+              });
+            },
           )
         ],
       ),
