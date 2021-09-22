@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoes/constants/app_constants.dart';
 
 class HomeSingleProduct extends StatefulWidget {
   final image;
@@ -14,22 +15,26 @@ class _HomeSingleProductState extends State<HomeSingleProduct> {
     return Container(
       padding: const EdgeInsets.all(12),
       alignment: Alignment.topRight,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(30),
+        color: kAccentColor,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-         
-         Column(
+          Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Nike',style: TextStyle(color: Colors.white),)
+                  Text(
+                    'Nike',
+                    style: TextStyle(color: Colors.white),
+                  )
                 ],
               )
             ],
-
           )
         ],
       ),
