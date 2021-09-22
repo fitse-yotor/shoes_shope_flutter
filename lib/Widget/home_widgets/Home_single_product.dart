@@ -14,9 +14,7 @@ class _HomeSingleProductState extends State<HomeSingleProduct> {
     return Container(
       padding: const EdgeInsets.all(12),
       alignment: Alignment.topRight,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(30)
-      ),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
     );
   }
 }
