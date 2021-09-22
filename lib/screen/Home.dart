@@ -17,7 +17,8 @@ class _HomePageState extends State<HomePage> {
         length: 4,
         child: CustomAnimation(
           home: Column(
-            children: [Catgories(), SearchBar()],
+            children: [Catgories(), SearchBar(),
+            Expanded(child: Container)],
           ),
         ));
   }
