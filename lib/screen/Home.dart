@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:shoes/Widget/home_widgets/Catagories.dart';
 import 'package:shoes/Widget/search_bar.dart';
@@ -22,7 +23,11 @@ class _HomePageState extends State<HomePage> {
               SearchBar(),
               Expanded(
                   child: Container(
-                      margin: const EdgeInsets.symmetric(vertical: 20)))
+                      margin: const EdgeInsets.symmetric(vertical: 20),
+                      child: CarouselSlider(
+                        options: CarouselOptions(),
+                      ),
+                      ))
             ],
           ),
         ));
