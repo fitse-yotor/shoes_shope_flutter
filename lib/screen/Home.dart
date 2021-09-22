@@ -29,8 +29,13 @@ class _HomePageState extends State<HomePage> {
                           height: double.infinity,
                           initialPage: 0,
                           reverse: false,
-                          
-                        ),
+                          autoPlayInterval: Duration(seconds: 2),
+                          autoPlayAnimationDuration: Duration(microseconds: 600),
+                          autoPlayCurve: Curves.fastLinearToSlowEaseIn,
+                          autoPlay: true,
+                          scrollDirection: Axis.horizontal
+
+                        ), items: [],
                       ),
                       ),
                       ),
