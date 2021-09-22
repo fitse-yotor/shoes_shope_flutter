@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:shoes/Widget/home_widgets/Catagories.dart';
+import 'package:shoes/Widget/home_widgets/Home_single_product.dart';
 import 'package:shoes/Widget/search_bar.dart';
 import 'package:shoes/constants/animation/customAnimation.dart';
 
