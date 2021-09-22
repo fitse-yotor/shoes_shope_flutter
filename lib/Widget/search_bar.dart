@@ -31,7 +31,7 @@ class SearchBar extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 6,
+            width: 5,
           ),
           Container(
             height: 50,
