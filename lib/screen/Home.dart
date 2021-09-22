@@ -17,8 +17,13 @@ class _HomePageState extends State<HomePage> {
         length: 4,
         child: CustomAnimation(
           home: Column(
-            children: [Catgories(), SearchBar(),
-            Expanded(child: Container)],
+            children: [
+              Catgories(),
+              SearchBar(),
+              Expanded(
+                  child: Container(
+                      margin: const EdgeInsets.symmetric(vertical: 20)))
+            ],
           ),
         ));
   }
