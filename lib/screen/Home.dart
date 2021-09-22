@@ -25,9 +25,15 @@ class _HomePageState extends State<HomePage> {
                   child: Container(
                       margin: const EdgeInsets.symmetric(vertical: 20),
                       child: CarouselSlider(
-                        options: CarouselOptions(),
+                        options: CarouselOptions(
+                          height: double.infinity,
+                          initialPage: 0,
+                          reverse: false,
+                          
+                        ),
                       ),
-                      ))
+                      ),
+                      ),
             ],
           ),
         ));
