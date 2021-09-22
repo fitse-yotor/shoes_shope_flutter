@@ -12,6 +12,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<String> image = [
+    "assets/clasic1.jpg"
+    "assets/shoes1.jpg"
+    "assets/shoes.jpeg"
+    "assets/sport.jpg"
+    "assets/sport.jpeg"
+    "assets/clasic.jpeg"
+  ];
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -22,23 +30,22 @@ class _HomePageState extends State<HomePage> {
               Catgories(),
               SearchBar(),
               Expanded(
-                  child: Container(
-                      margin: const EdgeInsets.symmetric(vertical: 20),
-                      child: CarouselSlider(
-                        options: CarouselOptions(
-                          height: double.infinity,
-                          initialPage: 0,
-                          reverse: false,
-                          autoPlayInterval: Duration(seconds: 2),
-                          autoPlayAnimationDuration: Duration(microseconds: 600),
-                          autoPlayCurve: Curves.fastLinearToSlowEaseIn,
-                          autoPlay: true,
-                          scrollDirection: Axis.horizontal
-
-                        ), items: [],
-                      ),
-                      ),
-                      ),
+                child: Container(
+                  margin: const EdgeInsets.symmetric(vertical: 20),
+                  child: CarouselSlider(
+                    options: CarouselOptions(
+                        height: double.infinity,
+                        initialPage: 0,
+                        reverse: false,
+                        autoPlayInterval: Duration(seconds: 2),
+                        autoPlayAnimationDuration: Duration(microseconds: 600),
+                        autoPlayCurve: Curves.fastLinearToSlowEaseIn,
+                        autoPlay: true,
+                        scrollDirection: Axis.horizontal),
+                    items: [],
+                  ),
+                ),
+              ),
             ],
           ),
         ));
