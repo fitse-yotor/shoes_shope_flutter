@@ -42,7 +42,9 @@ class _HomePageState extends State<HomePage> {
                         autoPlayCurve: Curves.fastLinearToSlowEaseIn,
                         autoPlay: true,
                         scrollDirection: Axis.horizontal),
-                    items: [],
+                    items: image.map(
+                      (e) => HomeSingleProduct(image: e,),
+                      ).toList(),
                   ),
                 ),
               ),
