@@ -30,7 +30,7 @@ class SearchBar extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          /* SizedBox(
             width: 6,
           ),
           Container(
@@ -43,7 +43,7 @@ class SearchBar extends StatelessWidget {
             child: Center(
               child: kSortIcon,
             ),
-          ),
+          ),*/
         ],
       ),
     );
