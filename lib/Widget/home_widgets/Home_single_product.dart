@@ -11,6 +11,12 @@ class HomeSingleProduct extends StatefulWidget {
 class _HomeSingleProductState extends State<HomeSingleProduct> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      padding: const EdgeInsets.all(12),
+      alignment: Alignment.topRight,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(30)
+      ),
+    );
   }
 }
