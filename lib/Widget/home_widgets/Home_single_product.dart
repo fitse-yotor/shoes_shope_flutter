@@ -37,9 +37,11 @@ class _HomeSingleProductState extends State<HomeSingleProduct> {
                       icon: Icon(
                         Icons.favorite_border,
                         color: Colors.white,
-                      ))
+                      )),
                 ],
-              )
+              ),
+              Text('Nike Zoom',
+                  style: TextStyle(fontSize: 24, color: Colors.white))
             ],
           )
         ],
