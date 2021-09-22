@@ -15,6 +15,19 @@ class _HomeSingleProductState extends State<HomeSingleProduct> {
       padding: const EdgeInsets.all(12),
       alignment: Alignment.topRight,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+         
+         Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row()
+            ],
+
+          )
+        ],
+      ),
     );
   }
 }
