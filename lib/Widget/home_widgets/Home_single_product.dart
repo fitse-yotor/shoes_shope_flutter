@@ -13,17 +13,17 @@ class _HomeSingleProductState extends State<HomeSingleProduct> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(12),
+      padding: const EdgeInsets.all(20),
       alignment: Alignment.topRight,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
         color: kAccentColor,
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -31,7 +31,13 @@ class _HomeSingleProductState extends State<HomeSingleProduct> {
                   Text(
                     'Nike',
                     style: TextStyle(color: Colors.white),
-                  )
+                  ),
+                  IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.favorite_border,
+                        color: Colors.white,
+                      ))
                 ],
               )
             ],
