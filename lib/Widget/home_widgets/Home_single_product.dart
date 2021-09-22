@@ -22,7 +22,12 @@ class _HomeSingleProductState extends State<HomeSingleProduct> {
          Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Row()
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Nike',style: TextStyle(color: Colors.white),)
+                ],
+              )
             ],
 
           )
